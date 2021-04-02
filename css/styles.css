@@ -1,0 +1,140 @@
+*{
+  box-sizing:border-box;
+}
+
+/* nav and .navbar formats the navigational area of webpage*/ 
+nav{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px; 
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.navbar{
+  display: flex;
+  justify-content:right;
+  list-style: none;
+  margin-right: 20px;
+  color: white;
+}
+
+.logo{
+  flex: 1 1 auto;
+  margin-left: 10%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/*Formats nav links and hover elements*/
+nav a{
+  margin: 15px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar a:hover{
+  color: red;
+  border-top: 3px solid rgb(165, 0, 0);
+  border-bottom: 3px solid rgb(165, 0, 0);
+  text-shadow: 0 0 5px #FFFFFF;
+ 
+}
+
+/* Used when user navigates down and allows user to acess header element when scrolling*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+}
+
+.sticky + main{
+  padding-top: 102px;
+}
+
+body{
+  font-family: Verdana, Arial, sans-serif; 
+  height: 100%;
+  background: linear-gradient(-45deg, rgba(79, 79, 255, 1),  rgba(0, 0, 255, 0.75), rgba(0, 0, 255, 0.50),  rgba(0, 0, 255, 0.25));
+  margin: 0px;
+  z-index: 1; /*Helps with images not being over navigation when scrolling*/
+}
+
+.page-top{
+  border: 10px solid red;
+  background-color: blue;
+  margin-top: 10px;
+  color: white;
+}
+main {
+  padding: 16px;
+}
+
+
+h1{
+  font-size: 30px;
+  color: white;
+}
+
+
+.img_container{
+  float: left;
+  width: 25%;
+  padding: 30px;
+  color: white;
+}
+
+
+
+
+.img_container a:visited{
+  color: white;
+}
+
+.img_container img{
+  border: 10px solid #0000FF;
+  border-radius: 10px;
+}
+
+.description{
+  text-align: center;
+  color: white;
+}
+
+
+.row::after{
+  content:"";
+  display: table;
+  clear: both;
+}
+
+
+
+.img_container:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+  position: sticky;
+  text-shadow: 0 0 5px #FF0000;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+  
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  border: 10px solid red;
+  background-color: blue;
+  margin-top: 10px;
+  color: white;
+  color: #fff;
+  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}

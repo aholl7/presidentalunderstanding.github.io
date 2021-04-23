@@ -1,0 +1,224 @@
+/*Universal Selector that makes effects the box-sizing of the whole page*/
+*{
+  box-sizing:border-box;
+}
+
+/* nav and .navbar formats the navigational area of webpage*/ 
+nav{
+  overflow: hidden;
+  padding: 20px 10px;
+}
+
+nav a{
+  float: left; 
+  color: #efe2ba;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+}
+
+.navbar{
+  float: right;
+  color: #efe2ba;
+}
+
+/*Formats the image logo*/
+.logo img{
+  border: 10px solid #4056A1;
+  border-radius: 10px;
+  float: left;
+  width: 150px;
+  margin-top: -20px;
+}
+
+/*Formats nav links and hover elements*/
+.navbar a:hover{
+  color: #F13C20;
+  border-top: 3px solid #F13C20;
+  border-bottom: 3px solid #F13C20;
+  text-shadow: 0 0 5px #FFFFFF;
+ 
+}
+
+
+
+
+/* Used when user navigates down and allows user to acess header element when scrolling*/
+.sticky {
+  position: fixed;
+  transition: 1s; /*Allows sticky header to have a animation transition when scrolling*/
+  top: 0; /*Sticks to the top of the page*/
+  width: 100%;
+  background-color: black;
+  z-index: 1; /*Puts element above all the elements*/
+}
+
+/*Gets rid of image when showing sticky header*/
+.sticky img{
+  display: none;
+}
+
+.sticky + main{
+  padding-top: 102px;
+}
+
+body{
+  font-family: Verdana, Arial, sans-serif; 
+  height: 100%;
+  background: linear-gradient(45deg, #4158d0, #99a7e2);
+  margin: 0px;
+  color: #efe2ba;
+}
+
+/*Formats top of page*/
+.page-top{
+  border: 10px solid #F13C20;
+  background-color: #4056A1;
+  margin-top: 0px;
+  color: #efe2ba;
+}
+
+main {
+  padding: 16px;
+}
+
+
+h1{
+  font-size: 30px;
+  color: #efe2ba;
+}
+
+
+.img_container{
+  float: left;
+  width: 25%;
+  padding: 30px;
+ 
+}
+
+.img_container a:visited{
+  color: #efe2ba;
+}
+
+.img_container img{
+  border: 10px solid #4056A1;
+  border-radius: 10px;
+}
+
+.img_container:hover {
+ 
+  transform: scale(1.1); 
+  position: sticky;
+  text-shadow: 0 0 5px #F13C20;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+
+.description{
+  text-align: center;
+  color: #efe2ba;
+}
+
+/* inserts something after the content of each row*/
+.row::after{
+  content:"";
+  display: table;
+  clear: both;
+}
+
+
+/*formats footer*/
+footer {
+  padding: 5px;
+  border: 10px solid #F13C20;
+  background-color: #4056A1;
+  margin-top: 10px;
+  color: #efe2ba;
+  text-align: center;
+}
+
+footer a{
+  color: #efe2ba;
+}
+
+.nav_footer a{
+  color: #efe2ba;
+  text-transform: uppercase;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+}
+
+
+
+
+/*Formats table on About Us Page*/
+table {
+  border-collapse: collapse; /* Gets rid of border on tabe*/
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+
+/*aligns text left for header and descriptions*/
+table td, table th {
+  padding-left: 8px;
+  text-align: left;
+}
+
+/*formats rows in table header*/
+table thead tr {
+  height: 60px;
+  background: #4056A1;
+  color: #F13C20;
+}
+
+/*formats rows in table body*/
+table tbody tr {
+  height: 50px;
+}
+
+.column1 {
+  width: 260px;
+  padding-left: 40px;
+  color: #F13C20;
+}
+
+.column2 {
+  width: 160px;
+  color: #F13C20;
+}
+
+.column3 {
+  width: 245px;
+  color: #F13C20;
+}
+
+h2{
+  text-align: left;
+}
+
+/*Formating for information pages*/
+h3{
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+  list-style-position: inside;
+  
+}
+
+ol{
+  list-style-position: inside;
+  text-align: center;
+}
+
+.pres_desc{
+  border-top: 5px solid #efe2ba;
+}
